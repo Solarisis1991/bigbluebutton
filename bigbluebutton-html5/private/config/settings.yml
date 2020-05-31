@@ -7,12 +7,12 @@ public:
     listenOnlyMode: true
     forceListenOnly: false
     skipCheck: false
-    clientTitle: BigBlueButton
-    appName: BigBlueButton HTML5 Client
+    clientTitle: Banning Webinars
+    appName: Banning Webinars
     bbbServerVersion: 2.2
-    copyright: "©2019 BigBlueButton Inc."
-    html5ClientBuild: HTML5_CLIENT_VERSION
-    helpLink: https://bigbluebutton.org/html5/
+    copyright: "©2020 Banning Advocaten"
+    html5ClientBuild: Banning Webinars
+    helpLink: https://www.banning.nl/contact
     lockOnJoin: true
     cdn: ""
     basename: "/html5client"
@@ -29,7 +29,7 @@ public:
       application:
         animations: true
         chatAudioAlerts: false
-        chatPushAlerts: false
+        chatPushAlerts: true
         userJoinAudioAlerts: false
         userJoinPushAlerts: false
         fallbackLocale: en
@@ -82,7 +82,7 @@ public:
     enableNetworkMonitoring: false
     packetLostThreshold: 10
   kurento:
-    wsUrl: HOST
+    wsUrl: wss://webinar.samuelwiegerinck.nl/bbb-webrtc-sfu
     chromeDefaultExtensionKey: akgoaoikmbmhcopjgakkcepdgdgkjfbc
     chromeDefaultExtensionLink: https://chrome.google.com/webstore/detail/bigbluebutton-screenshare/akgoaoikmbmhcopjgakkcepdgdgkjfbc
     chromeExtensionKey: KEY
@@ -147,7 +147,7 @@ public:
     time: 5000
   chat:
     enabled: true
-    startClosed: false
+    startClosed: true
     min_message_length: 1
     max_message_length: 5000
     grouping_messages_window: 10000
